@@ -5,7 +5,10 @@
 I'm glad you're interested in seeing how I build my Portfolio! I've used the two languages I love, *Ruby and JavaScript*. This app operates with Ruby on Rails and jQuery to showcase my current projects as well as give you, the viewer a little **historia** (history) about myself.
 
 **_Además, gracias para su interés sobre yo!_**<br />
-(Again, thanks for your interest about me!)
+(Again, thanks for your interest about me!)<br />
+
+[La Cartera de Z](https://z-drake-portfolio.herokuapp.com)<br />
+(Z's Portfolio)
 
 ## License
 
