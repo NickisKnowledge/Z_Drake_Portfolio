@@ -7,7 +7,7 @@ I'm glad you're interested in seeing how I build my Portfolio! I've used the two
 **_Además, gracias para su interés sobre yo!_**<br />
 (Again, thanks for your interest about me!)<br />
 
-[La Cartera de Z](https://z-drake-portfolio.herokuapp.com)<br />
+**[La Cartera de Z](https://z-drake-portfolio.herokuapp.com)**<br />
 (Z's Portfolio)
 
 ## License
