@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald:500');
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: 'Abril Fatface', cursive;
+  background-image: url('dark_bkgd.jpg');
+  color: #fff;
+  height: 100%;
+}
+
+.col-sm-1.logo, .col-sm-9 {
+  margin: 20px 0;
+  clear: both;
+}
+
+
+#logo img {
+  height: 100px;
+}
+
+.col-sm-2.sidebar {
+  background-color: #fff;
+  margin-bottom: 0;
+
+}
+
+.col-sm-2.sidebar h3 {
+  -webkit-text-fill-color:  #e52;
+  -webkit-text-stroke: 1px black;
+  font-size: 35px;
+  text-align: center;
+  padding: 10px auto;
+  margin: 0 auto 5px;
+}
+
+.col-sm-2.sidebar a {
+  text-decoration: none;
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Oswald', sans-serif;
+  -webkit-text-fill-color: #083;
+  -webkit-text-stroke: 1px black; /* adding outline to words */
+  display: block;
+}
+
+.col-sm-2.sidebar a:hover {
+  -webkit-text-fill-color:  #e52;
+  -webkit-text-stroke: 1px black;
+}
+
+.p1 {
+  -webkit-text-fill-color:  #fff;
+  -webkit-text-stroke: 1px black;
+}
+
+.p2 {
+  text-align: center;
+  -webkit-text-fill-color:  #e52;
+  -webkit-text-stroke: 1px black;
+}
+
+.p3 {
+  text-align: right;
+  -webkit-text-fill-color:  #083;
+  -webkit-text-stroke: 1px black;
+}
+
+.p4 {
+  text-align: center;
+  -webkit-text-fill-color:  #e52;
+  -webkit-text-stroke: 1px black;
+}
+
+.p5 {
+  -webkit-text-fill-color:  #fff;
+  -webkit-text-stroke: 1px black;
+}
+
+
+/* HOME PAGE */
+.jumbo_home {
+  font-size: 40px;
+  text-align: center;
+}
+
+
+.language_boxes {
+  padding: 60px 100px;
+  text-align: center;
+}
+
+.language_boxes .box {
+  display: inline-block;
+  background: #fff;
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+}
+
+/* ABOUT PAGE */
+.jumbo_about {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 0;
+  padding-bottom: 20px;
+}
+
+.jumbo_about h1 {
+  margin: 0 auto;
+}
+
+.font_setter_about {
+  font-family: 'Luckiest Guy', cursive;
+}
+
+img.about_photo {
+  float: right;
+  width: 300px;
+  height: 300px;
+}
+
+/* clearing float */
+.content {
+  clear: both;
+}
+
+/* CSS talk bubble */
+.talk-bubble {
+	margin: 40px;
+  display: inline-block;
+  position: relative;
+	// width: 55%;
+	height: auto;
+	background-color: #e52;
+}
+
+.round {
+  border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+}
+
+/* Right triangle placed top right flush. */
+.tri-right.border.right-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -40px;
+  top: 30px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: #e52 transparent transparent #666;
+}
+
+.tri-right.right-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: auto;
+	right: -20px;
+  top: 38px;
+	bottom: auto;
+	border: 12px solid;
+	border-color: #e52 transparent transparent #e52;
+}
+
+/* talk bubble contents */
+.talktext {
+  padding: 16px 16px 0 16px;
+	text-align: left;
+  line-height: 1.5em;
+  font-size: 20px;
+}
+
+.talktext p, {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+.quote {
+  background-color: lightyellow;
+  color: #e52;
+	text-align: center;
+  line-height: 1.5em;
+  padding: 10px;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.quote em {
+  color: #083;
+}
+
+/* Right triangle, left side slightly down */
+.tri-right.border.left-in:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -40px;
+	right: auto;
+  top: 30px;
+	bottom: auto;
+	border: 20px solid;
+	border-color: #666 #666 transparent transparent;
+}
+
+.tri-right.left-in:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -20px;
+	right: auto;
+  top: 38px;
+	bottom: auto;
+	border: 12px solid;
+	border-color: lightyellow lightyellow transparent transparent;
+}
+
+.note {
+  background-color: lightyellow;
+  color: #e52;
+  text-align: center;
+  line-height: 1.5em;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.about {
+  color: #000;
+  background: #fff;
+  margin: 1%;
+  padding: 10px;
+}
+
+.about p {
+  display: inline;
+}
+
+.social_media li  a {
+  text-decoration: none;
+  color: #000;
+}
+
+.social_media li  a:hover {
+  color: #083;
+}
+
+.good_bye {
+  margin-top: 25%;
+  text-align: center;
+  font-size: 35px;
+}
+
+// INDEX PAGE
+.col-sm {
+  text-align: center;
+}
+
+.index_title {
+  // text-align: center;
+  font-size: 4.5rem;
+  background: -webkit-linear-gradient(#fff, #e52);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lang_logo {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.lang_logo_container {
+  text-align: center;
+}
+
+.lang_logos {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin-left: 15px;
+}
+
+.index_divider {
+  height: 10px;
+  border: 0;
+  box-shadow: 0 20px 20px -20px #fff
+  inset;
+}
+
+//SHOW PAGE
+.show_page {
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.prj_main_img {
+  width: 300px;
+  height: 300px;
+  margin-top: 20px;
+}
+
+.descrip_1, .descrip_2 {
+  margin-bottom: 20px;
+}
+
+.live_link {
+  text-align: center;
+  color: #e52;
+  font-size: 40px;
+}
+
+.live_link a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.live_link a:hover {
+  font-family: 'Abril Fatface', cursive;
+}
+
+.youtube-player {
+    position: relative;
+    padding-bottom: 56.23%;
+    /* Use 75% for 4:3 videos */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 5px;
+}
+
+.youtube-player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: transparent;
+}
+
+.youtube-player img {
+    bottom: 0;
+    display: block;
+    left: 0;
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    height: auto;
+    cursor: pointer;
+    -webkit-transition: .4s all;
+    -moz-transition: .4s all;
+    transition: .4s all;
+}
+
+.youtube-player img:hover {
+    -webkit-filter: brightness(75%);
+}
+
+.youtube-player .play {
+    height: 72px;
+    width: 72px;
+    left: 50%;
+    top: 50%;
+    margin-left: -36px;
+    margin-top: -36px;
+    position: absolute;
+    background: url("//i.imgur.com/TxzC70f.png") no-repeat;
+    cursor: pointer;
+}
+
+.extra_image {
+  margin: 50px auto 0;
+}
+
+.extra_image img {
+  width: 350px;
+  height: 450px;
+}
+
+/* On smaller screens, where height is less than 450px, change the
+ style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

@@ -1,0 +1,15 @@
+<% if (project.languages.count > 1) %>
+  <div class='lang_logo_container'>
+    <% project.languages.each do |lang| %>
+        <%= image_tag("logos/#{lang.image}",
+          alt: lang.title,
+          class: 'lang_logos')
+        %>
+    <% end %>
+  </div>
+<% else %>
+<%= image_tag("logos/#{project.languages.first.image}",
+    alt: "#{project.languages.first.title}_logo",
+    class: 'lang_logo')
+  %>
+<% end %>

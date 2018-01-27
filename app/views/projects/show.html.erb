@@ -1,0 +1,64 @@
+<div class='show_page'>
+  <div class="center">
+    <h1><%=  @project.title %></h1>
+    <h5><%= @project.subtitle %></h5>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-7">
+      <h3>Description</h3>
+      <div class='descrip_1'>
+        <%= @project.description_1 %>
+      </div>
+      <div class='descrip_2'>
+        <%= @project.description_2 %>
+      </div>
+      <div  class='live_link'>
+        <% if @project.title.include?('Gem') %>
+          Link to <%= link_to 'Gem', @project.live_link %>!
+        <% elsif @project.live_link.include?('github') %>
+          Link to <%= link_to 'Githib', @project.live_link %>!
+        <% else %>
+          Live <%= link_to 'link', @project.live_link %>!
+        <% end %>
+      </div>
+    </div>
+
+    <div class="col-sm-5">
+      <div class="photos">
+        <%= image_tag(@project.image , alt: @project.title,
+        class: 'prj_main_img') %>
+      </div>
+    </div>
+  </div>
+
+  <div class='row iframe'>
+    <div class="col-sm-12">
+      Walkthrough video: (click me!)
+      <br />
+      <div class="youtube-player" data-id="<%= @project.walkthroughId %>"></div>
+    </div>
+  </div>
+
+  <div class='row'>
+    <% if (@project.code_sessionId.present?) %>
+      <div class='col-sm-12'>
+        Coding Session video: (click me!)
+        <br />
+        <div class="youtube-player" data-id="<%= @project.code_sessionId %>"></div>
+      </div>
+    <% end %>
+  </div>
+
+  <div style="text-align: center">
+    <% if (@project.extra_image.present?) %>
+      <div class='row extra_image'>
+        <div class='col-sm-12'>
+          <%= image_tag("extra_images/#{@project.extra_image}",
+            alt: @project.extra_image)
+          %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Z Code Doc</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class='container-fluid' style="overflow: hidden">
+      <div class='row'>
+        <div class='col-sm-1 logo'>
+          <div id='logo'>
+            <%= image_tag('logo.jpg', alt: 'logo') %>
+          </div>
+        </div>
+        <div class='col-sm-9'>
+          <%= yield %>
+        </div>
+        <div class='col-sm-2 sidebar'>
+          <% if user_signed_in? %>
+             <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+          <% end %>
+          <h3>Welcome</h3>
+          <%= link_to 'Home', '/' %>
+          <%= link_to 'Z Doc', '/about' %>
+          <%= link_to 'Projects', '/projects' %>
+          <%= link_to 'Videos', 'https://www.youtube.com/playlist?list=PLrYWLylYK_la-Lgbdy3C-SH7FV1HBXPs4' %>
+          <%= link_to 'Blog', 'http://nickisknowledge.info/' %>
+          <hr />
+          <h3 class='description'>Narrative</h3>
+          <p class='p1'>Persistent</p>
+          <p class='p2'>Innovative</p>
+          <p class='p3'>Lively</p>
+          <p class='p4'>Practical</p>
+          <p class='p5'>Ambitious</p>
+          <p class='p2'>Flexible</p>
+          <p class='p3'>Proactive</p>
+          <p class='p4'>Unique</p>
+          <p class='p5'>Trouble -</p>
+          <p class='p2'>Shooter</p>
+          <p class='p3'>Team player</p>
+          <p class='p4'>Meticulous</p>
+          <p class='p5'>Resourceful</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
