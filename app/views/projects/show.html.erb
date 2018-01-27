@@ -15,11 +15,11 @@
       </div>
       <div  class='live_link'>
         <% if @project.title.include?('Gem') %>
-          Link to <%= link_to 'Gem', @project.live_link %>!
+          Link to <%= link_to 'Gem', @project.live_link, target: '_blank' %>!
         <% elsif @project.live_link.include?('github') %>
-          Link to <%= link_to 'Githib', @project.live_link %>!
+          Link to <%= link_to 'Githib', @project.live_link, target: '_blank' %>!
         <% else %>
-          Live <%= link_to 'link', @project.live_link %>!
+          Live <%= link_to 'link', @project.live_link, target: '_blank' %>!
         <% end %>
       </div>
     </div>
