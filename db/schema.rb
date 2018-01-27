@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20180125224605) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "languages", force: :cascade do |t|
     t.string "title"
     t.string "image"
@@ -20,8 +23,8 @@ ActiveRecord::Schema.define(version: 20180125224605) do
   end
 
   create_table "project_languages", force: :cascade do |t|
-    t.integer "project_id"
-    t.integer "language_id"
+    t.bigint "project_id"
+    t.bigint "language_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["language_id"], name: "index_project_languages_on_language_id"
@@ -59,4 +62,6 @@ ActiveRecord::Schema.define(version: 20180125224605) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "project_languages", "languages"
+  add_foreign_key "project_languages", "projects"
 end
